@@ -4,9 +4,14 @@
 CMakeFiles/path_planning.dir/src/main.cpp.o
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Cholesky
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Core
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Dense
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Eigenvalues
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Geometry
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Householder
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Jacobi
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/LU
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/QR
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/SVD
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LDLT.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Cholesky/LLT_LAPACKE.h
@@ -140,16 +145,64 @@ CMakeFiles/path_planning.dir/src/main.cpp.o
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/StaticAssert.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Core/util/XprHelper.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/./ComplexSchur.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/./HessenbergDecomposition.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/./RealQZ.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/./RealSchur.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/./Tridiagonalization.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/ComplexSchur.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/EigenSolver.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/RealQZ.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/RealSchur.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Eigenvalues/Tridiagonalization.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/AlignedBox.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/AngleAxis.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/EulerAngles.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Homogeneous.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Hyperplane.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/OrthoMethods.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/ParametrizedLine.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Quaternion.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Rotation2D.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/RotationBase.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Scaling.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Transform.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Translation.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/Umeyama.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Geometry/arch/Geometry_SSE.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/BlockHouseholder.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/Householder.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Householder/HouseholderSequence.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/Jacobi/Jacobi.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/LU/Determinant.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/LU/FullPivLU.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/LU/InverseImpl.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/LU/PartialPivLU.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/LU/PartialPivLU_LAPACKE.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/LU/arch/Inverse_SSE.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/CompleteOrthogonalDecomposition.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/FullPivHouseholderQR.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/QR/HouseholderQR_LAPACKE.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/SVD/BDCSVD.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/SVD/JacobiSVD.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/SVD/JacobiSVD_LAPACKE.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/SVD/SVDBase.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/SVD/UpperBidiagonalization.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/Image.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/Kernel.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/RealSvd2x2.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/blas.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke.h
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/src/misc/lapacke_mangling.h
@@ -163,6 +216,7 @@ CMakeFiles/path_planning.dir/src/main.cpp.o
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/json.hpp
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/main.cpp
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/path_planner.h
+ /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/spline.h
 CMakeFiles/path_planning.dir/src/path_planner.cpp.o
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/path_planner.cpp
  /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/path_planner.h

@@ -9,6 +9,8 @@
 #ifndef PATH_PLANNER_H_
 #define PATH_PLANNER_H_
 
+#include <vector>
+
 // #include "helper_functions.h"
 // #include "map.h"
  
@@ -25,8 +27,8 @@
 // };
 
 struct ValueArray {
-	std::vector<double> next_x_vals;
-	std::vector<double> next_y_vals;
+	// std::vector<double> next_x_vals;
+	// std::vector<double> next_y_vals;
 };
 
 class PathPlanner {
@@ -34,7 +36,11 @@ class PathPlanner {
 	// // Number of particles to draw
 	// int num_particles; 
 	
-	
+	  // vector<double> map_x;
+	  // vector<double> map_y;
+	  // vector<double> map_s;
+	  // vector<double> map_dx;
+	  // vector<double> map_dy;	
 	
 	// Flag, if filter is initialized
 	bool is_initialized = 0;
@@ -73,7 +79,7 @@ public:
 	//  * @param velocity Velocity of car from t to t+1 [m/s]
 	//  * @param yaw_rate Yaw rate of car from t to t+1 [rad/s]
 	//  */
-	ValueArray planPath(double car_x,double car_y,double car_s, double car_d, double car_yaw, double car_speed, double *previous_path_x, double *previous_path_y, double end_path_s, double end_path_d, double **sensor_fusion);
+	ValueArray planPath(double car_x,double car_y,double car_s, double car_d, double car_yaw, double car_speed, double *previous_path_x, double *previous_path_y, double end_path_s, double end_path_d, double sensor_fusion[][7]);
 	
 	// /**
 	//  * dataAssociation Finds which observations correspond to which landmarks (likely by using
