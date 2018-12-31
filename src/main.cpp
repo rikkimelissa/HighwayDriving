@@ -283,15 +283,16 @@ vector<double> getSplineWaypoints(double s, double d, const vector<double> &maps
   // int wp2 = (prev_wp+1)%maps_x.size();
   // int wp3 = (prev_wp+2)%maps_x.size();
 
+  int numPoints = 10;
   vector<double> points;
-  for (int i=0; i<8; i++){
-    points.push_back(maps_s[(prev_wp+i-3)%maps_x.size()]);
+  for (int i=0; i<numPoints; i++){
+    points.push_back(maps_s[(prev_wp+i-(numPoints/2-1))%maps_x.size()]);
   }
-  for (int i=0; i<8; i++){
-    points.push_back(maps_x[(prev_wp+i-3)%maps_x.size()]);
+  for (int i=0; i<numPoints; i++){
+    points.push_back(maps_x[(prev_wp+i-(numPoints/2-1))%maps_x.size()]);
   }  
-  for (int i=0; i<8; i++){
-    points.push_back(maps_y[(prev_wp+i-3)%maps_x.size()]);
+  for (int i=0; i<numPoints; i++){
+    points.push_back(maps_y[(prev_wp+i-(numPoints/2-1))%maps_x.size()]);
   }
   // vector<double> points = {maps_s[wp0], maps_s[wp1], maps_s[wp2], maps_s[wp3], maps_x[wp0], maps_x[wp1], maps_x[wp2], maps_x[wp3], maps_y[wp0],maps_y[wp1],maps_y[wp2],maps_y[wp3]};
 
@@ -398,22 +399,30 @@ int main() {
             nextwp++;
 
             double distance = car_s + .2; //map_waypoints_s[nextwp] - car_s;
-            double v_des = 10;
+            double v_des = car_speed;
+            v_des+=.5;
+            if (v_des > 10){
+              v_des = 10;
+            }
+
+            std::cout << car_speed << " " << v_des << endl;
 
             vector<double> start = {car_s, v_des, 0};
             vector<double> end = {distance, v_des, 0};
-            vector<double> resultJMT = JMT(start, end, .02);
+            vector<double> resultJMT = JMT(start, end, distance/v_des);
 
             double t;
             double wp_s = car_s;
             double wp_x, wp_y;
-            vector<double> nextXY = getXY(wp_s, 6, map_waypoints_s, map_waypoints_x, map_waypoints_y);
             vector<double> nextWPs = getSplineWaypoints(wp_s, 6, map_waypoints_s, map_waypoints_x, map_waypoints_y);
-            vector<double> S(8), X(8), Y(8);
-            for (int i=0; i<8; i++){
+            int numPoints = 10;
+            vector<double> S(numPoints), X(numPoints), Y(numPoints);
+
+            // std::cout << nextWPs.size() << endl;
+            for (int i=0; i<numPoints; i++){
               S[i] = nextWPs[i];
-              X[i] = nextWPs[i+8];
-              Y[i] = nextWPs[i+16]-6;
+              X[i] = nextWPs[i+numPoints];
+              Y[i] = nextWPs[i+numPoints*2]-6;
             }
              tk::spline sX;
              tk::spline sY;
@@ -421,19 +430,13 @@ int main() {
              sY.set_points(S,Y);  
              double nextX, nextY;
 
-            for (int i=0; i<160; i++){
+            for (int i=0; i<60; i++){
               t = i*.02;
               wp_s = (car_s + resultJMT[1]*t + resultJMT[3]*pow(t,3) + resultJMT[4]*pow(t,4) + resultJMT[5]*pow(t,5)); 
-              
-              // wp_s = wp_s + .15;
-              // nextXY = getXY(wp_s, 6, map_waypoints_s, map_waypoints_x, map_waypoints_y);
               nextX = sX(wp_s);
               nextY = sY(wp_s);
-              // std::cout << nextXY[1] << " " << nextY << endl; //nextXYs[0] << " " << nextXYs[1] << " " << nextXYs[2] << " " << nextXYs[3] << endl;
 
-              // std::cout << nextXY[1] << " " << nextXYs[1] << endl;
               next_x_vals.push_back(nextX);
-              // next_y_vals.push_back(nextXY[1] - 6);
               next_y_vals.push_back(nextY);
 
 
