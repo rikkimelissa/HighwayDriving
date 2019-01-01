@@ -1127,14 +1127,8 @@ Eigen-3.3/Eigen/Dense
 /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/Eigen-3.3/Eigen/Dense
 json.hpp
 /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/json.hpp
-path_planner.h
-/home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/path_planner.h
 spline.h
 /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/spline.h
-
-/home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/path_planner.h
-vector
--
 
 /home/rikki/repo/HighwayDriving/CarND-Path-Planning-Project/src/spline.h
 cstdio

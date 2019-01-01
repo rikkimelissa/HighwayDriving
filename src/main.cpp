@@ -9,7 +9,6 @@
 #include "Eigen-3.3/Eigen/QR"
 #include "Eigen-3.3/Eigen/Dense"
 #include "json.hpp"
-#include "path_planner.h" 
 #include "spline.h"
 // #include <cmath>
 
@@ -328,7 +327,6 @@ int main() {
 
   ifstream in_map_(map_file_.c_str(), ifstream::in);
 
-  PathPlanner pp;
   double prevSpeed;
   double init = 0;
 
